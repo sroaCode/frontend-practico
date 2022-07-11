@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&display=swap">
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Gentium Book Plus', serif;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            /* El primer argumento es para la cantidad de columnas el segundo es para el tamano*/
+            gap: 24px;
+            place-content: center; /*centrar la grilla*/
+        }
+
+        .product-card {
+            width: 240px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover;
+            /*acomoda la imagen al tamano que definimos*/
+        }
+
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+        }
+
+        .product-info div p:nth-child(1) {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0px;
+            margin-bottom: 16px;
+        }
+
+        .product-info div p:nth-child(2) {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color: var(--very-light-pink);
+        }
+
+        .product-info figure {
+            margin: 0px;
+        }
+
+        .product-info figure img {
+            width: 35px;
+            height: 35px;
+        }
+
+        @media (max-width: 640px) {
+
+            .cards-container {
+                grid-template-columns: repeat(auto-fill, 140px);
+            }
+
+            .product-card {
+                width: 140px;
+            }
+
+            .product-card img {
+                width: 100%;
+                height: 140px;
+                border-radius: 20px;
+                object-fit: cover;
+                /*acomoda la imagen al tamano que definimos*/
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+            <div class="product-card">
+                <img src="../images/bici.jpg" alt="" class="product-card-img">
+                <div class="product-info">
+                    <div>
+                        <p>$120,000</p>
+                        <p>Bike</p>
+                    </div>
+                    <figure>
+                        <img src="../clone/curso-frontend-developer-practico/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/bici.jpg" alt="" class="product-card-img">
+                <div class="product-info">
+                    <div>
+                        <p>$120,000</p>
+                        <p>Bike</p>
+                    </div>
+                    <figure>
+                        <img src="../clone/curso-frontend-developer-practico/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/bici.jpg" alt="" class="product-card-img">
+                <div class="product-info">
+                    <div>
+                        <p>$120,000</p>
+                        <p>Bike</p>
+                    </div>
+                    <figure>
+                        <img src="../clone/curso-frontend-developer-practico/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/bici.jpg" alt="" class="product-card-img">
+                <div class="product-info">
+                    <div>
+                        <p>$120,000</p>
+                        <p>Bike</p>
+                    </div>
+                    <figure>
+                        <img src="../clone/curso-frontend-developer-practico/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/bici.jpg" alt="" class="product-card-img">
+                <div class="product-info">
+                    <div>
+                        <p>$120,000</p>
+                        <p>Bike</p>
+                    </div>
+                    <figure>
+                        <img src="../clone/curso-frontend-developer-practico/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/bici.jpg" alt="" class="product-card-img">
+                <div class="product-info">
+                    <div>
+                        <p>$120,000</p>
+                        <p>Bike</p>
+                    </div>
+                    <figure>
+                        <img src="../clone/curso-frontend-developer-practico/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/bici.jpg" alt="" class="product-card-img">
+                <div class="product-info">
+                    <div>
+                        <p>$120,000</p>
+                        <p>Bike</p>
+                    </div>
+                    <figure>
+                        <img src="../clone/curso-frontend-developer-practico/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/bici.jpg" alt="" class="product-card-img">
+                <div class="product-info">
+                    <div>
+                        <p>$120,000</p>
+                        <p>Bike</p>
+                    </div>
+                    <figure>
+                        <img src="../clone/curso-frontend-developer-practico/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/bici.jpg" alt="" class="product-card-img">
+                <div class="product-info">
+                    <div>
+                        <p>$120,000</p>
+                        <p>Bike</p>
+                    </div>
+                    <figure>
+                        <img src="../clone/curso-frontend-developer-practico/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/bici.jpg" alt="" class="product-card-img">
+                <div class="product-info">
+                    <div>
+                        <p>$120,000</p>
+                        <p>Bike</p>
+                    </div>
+                    <figure>
+                        <img src="../clone/curso-frontend-developer-practico/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/bici.jpg" alt="" class="product-card-img">
+                <div class="product-info">
+                    <div>
+                        <p>$120,000</p>
+                        <p>Bike</p>
+                    </div>
+                    <figure>
+                        <img src="../clone/curso-frontend-developer-practico/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/bici.jpg" alt="" class="product-card-img">
+                <div class="product-info">
+                    <div>
+                        <p>$120,000</p>
+                        <p>Bike</p>
+                    </div>
+                    <figure>
+                        <img src="../clone/curso-frontend-developer-practico/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
